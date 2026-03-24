@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>自動遷移中...</title>
+</head>
+<body>
+    <p>お申し込みページへ移動しています。しばらくお待ちください...</p>
+
+    <form id="autoForm" action="https://ticket.pia.jp/piasp/rsv/madeintohoku/madeintohoku26shsikss.jsp" method="POST">
+        <input name="slcd" type="hidden" value="madeintohoku26shsikss">
+        <input name="acpt_no" type="hidden" value="PJxPlBoFzm2fSgrQ">
+        <input type="submit" value="移動しない場合はこちらをクリックしてください">
+    </form>
+
+    <script>
+        // ページ読み込み完了時にフォームを自動送信
+        window.onload = function() {
+            document.getElementById('autoForm').submit();
+        };
+    </script>
+</body>
+</html>
